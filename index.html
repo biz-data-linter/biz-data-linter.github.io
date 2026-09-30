@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Warehouse Restock System</title>
+<style>
+  :root { --bg:#f7f8fa; --card:#ffffff; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --accent:#2f5597; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#111418; --card:#1a1f26; --ink:#e5e7eb; --muted:#9ca3af; --line:#2a313b; --accent:#8fb0ec; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:16px/1.7 "Sarabun","Noto Sans Thai",system-ui,-apple-system,"Segoe UI",sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:40px 16px 64px; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:12px;
+            padding:24px; margin-bottom:20px; }
+  h1 { font-size:26px; margin:0 0 4px; }
+  h2 { font-size:20px; margin:0 0 12px; color:var(--accent); }
+  h3 { font-size:16px; margin:18px 0 4px; }
+  p, li { margin:6px 0; }
+  ul { padding-left:22px; }
+  .muted { color:var(--muted); font-size:14px; }
+  .en { color:var(--muted); font-size:14px; border-top:1px solid var(--line); margin-top:16px; padding-top:12px; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+
+<section id="home">
+  <h1>Warehouse Restock System</h1>
+  <p class="muted">L.Inter Corporation Co., Ltd.</p>
+  <p>ระบบภายในสำหรับพนักงานของบริษัท ใช้แนะนำว่าสินค้าใดควรสั่งซื้อ จำนวนเท่าไร และควรสั่งวันไหน
+     โดยคำนวณจากรายงานสต๊อกและยอดขายของบริษัทเอง</p>
+  <p>ระบบนี้ไม่เปิดให้บุคคลภายนอกใช้งาน ผู้ใช้ต้องได้รับบัญชีจากผู้ดูแลระบบของบริษัทเท่านั้น</p>
+  <p class="en">An internal tool for L.Inter Corporation staff that suggests which products to reorder,
+     how much, and when, based on the company's own stock and sales reports. It is not available
+     to the public; accounts are issued only by the company's administrator.</p>
+</section>
+
+<section id="privacy">
+  <h2>นโยบายความเป็นส่วนตัว (Privacy Policy)</h2>
+
+  <h3>ข้อมูลที่ระบบเข้าถึง</h3>
+  <ul>
+    <li>ไฟล์รายงานสต๊อกและรายงานยอดขายที่บริษัทเก็บไว้ใน Google Drive ของบัญชีบริษัท</li>
+    <li>Google Sheets ของบริษัทที่ใช้เก็บข้อมูลสินค้าและผลการคำนวณ</li>
+  </ul>
+
+  <h3>การใช้ข้อมูล</h3>
+  <ul>
+    <li>ใช้เพื่อคำนวณคำแนะนำการสั่งซื้อสินค้าภายในบริษัทเท่านั้น</li>
+    <li>ระบบอ่านไฟล์ต้นฉบับอย่างเดียว ไม่แก้ไขหรือลบไฟล์ต้นฉบับ</li>
+  </ul>
+
+  <h3>การเก็บและการเปิดเผยข้อมูล</h3>
+  <ul>
+    <li>ข้อมูลทั้งหมดเก็บอยู่ในบัญชี Google ของบริษัทเท่านั้น</li>
+    <li>ไม่ขาย ไม่แบ่งปัน และไม่ส่งข้อมูลให้บุคคลภายนอก</li>
+    <li>ไม่มีโฆษณาและไม่มีการติดตามผู้ใช้</li>
+    <li>ผู้ใช้ต้องเข้าสู่ระบบด้วยบัญชีที่บริษัทออกให้ และผู้ดูแลระบบสามารถยกเลิกบัญชีได้ทุกเมื่อ</li>
+  </ul>
+
+  <h3>ติดต่อ</h3>
+  <p>bizdata.linter@gmail.com</p>
+
+  <p class="en">This app accesses only the company's own Google Drive files and Google Sheets
+     (stock and sales reports) to calculate internal reorder suggestions. Source files are read only.
+     All data stays in the company's Google account and is never sold, shared, or sent to third parties.
+     There are no ads or user tracking. Access requires an account issued by the company's administrator.
+     Contact: bizdata.linter@gmail.com</p>
+
+  <p class="muted">ปรับปรุงล่าสุด 30 กันยายน 2026 · Last updated 30 September 2026</p>
+</section>
+
+</main>
+</body>
+</html>
